@@ -1,0 +1,28 @@
+{
+  "name": "js1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "engines": {
+    "node": "15.X"
+  },
+  "scripts": {
+    "dev": "babel-node ./src/index.js",
+    "clean": "rm -rf dist",
+    "prod": "node ./dist/bin/www.js",
+    "build": "npm run clean && bable ./src --out-dir dist --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11"
+  }
+}
