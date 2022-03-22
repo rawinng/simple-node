@@ -21,7 +21,7 @@
     "express": "^4.17.3",
     "http-errors": "^1.6.2",
     "morgan": "^1.9.1",
-    "jade": "^1.11.0",
+    "jade": "^1.11.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
