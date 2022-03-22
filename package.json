@@ -4,25 +4,30 @@
   "description": "",
   "main": "hello.js",
   "engines": {
-    "node": "15.X"
+    "node": "16.X"
   },
   "scripts": {
-    "dev": "babel-node ./src/index.js",
+    "dev": "babel-node ./src/www.js",
     "clean": "rm -rf dist",
     "prod": "node ./dist/bin/www.js",
-    "build": "npm run clean && bable ./src --out-dir dist --copy-files",
+    "build": "npm run clean && babel ./src --out-dir dist --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "cookie-parser": "^1.4.3",
+    "express": "^4.17.3",
+    "http-errors": "^1.6.2",
+    "morgan": "^1.9.1",
+    "jade": "^1.11.0",
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.8",
     "@babel/node": "^7.16.8",
-    "@babel/preset-env": "^7.16.11"
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.11.0"
   }
 }
